@@ -22,8 +22,6 @@ cache:
 matrix:
   allow_failures:
     - php: nightly
-    - php: hhvm
-    - php: 7.4
 
 before_install:
   - echo "memory_limit=3G" >> ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/travis.ini
